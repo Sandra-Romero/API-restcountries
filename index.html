@@ -86,7 +86,10 @@
 
                     // -- OJO DEBO RECORRER EL RESULTADO data --
 
-                $('.paises').html(`
+                    // AQUI ESTOY DIBUJANDO EN LOS ELEMENTOS QUE TENGAN LA CLASE PRUEBA
+                    // UN ELEMENTO IMG CON EL VALOR DE LA PROPIEDAD FLAG DE EL OBJETO RESULTANTE DE LA BUSQUEDA
+                   
+                    $('.paises').html(`
                 <div class="e-card-horizontal" >
                     <img src="${data[0].flag}" alt="${data[0].name}" style="height: 200px" >
                 <div class="e-card-header">
@@ -102,10 +105,6 @@
               </div>`);
               
 
-                    // AQUI ESTOY DIBUJANDO EN LOS ELEMENTOS QUE TENGAN LA CLASE PRUEBA
-                    // UN ELEMENTO IMG CON EL VALOR DE LA PROPIEDAD FLAG DE EL OBJETO RESULTANTE DE LA BUSQUEDA
-                   //** $('.prueba').html(`<img src="${data[0].flag}"></img>`); 
-                  
                 });
 
                 buscarPais.fail(function(xhr, status, error){
